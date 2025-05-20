@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Structures - Programming Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Control Structures</h1>
+        <p><a href="index.html">Back to Home</a></p>
+
+        <h2>What are Control Structures?</h2>
+        <p>Control structures are fundamental components of programming that allow you to dictate the flow of execution of your program's instructions. Instead of the computer just running code line by line from top to bottom, control structures enable you to make decisions, repeat actions, and choose different paths based on certain conditions. They are essential for creating dynamic and responsive programs.</p>
+
+        <h2>Conditional Statements (If/Else If/Else)</h2>
+        <p>Conditional statements allow a program to execute different blocks of code based on whether a specified condition is true or false. This is how programs make decisions.</p>
+
+        <h3>Simple If Statement</h3>
+        <p>The simplest form executes a block of code only if a condition is true.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>IF temperature > 30 THEN</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "It's a hot day!"</code></p>
+        <p><code>END IF</code></p>
+
+        <h3>If/Else Statement</h3>
+        <p>This executes one block of code if the condition is true and another block if it's false.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>IF score >= 60 THEN</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "You passed!"</code></p>
+        <p><code>ELSE</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "You failed."</code></p>
+        <p><code>END IF</code></p>
+
+        <h3>If/Else If/Else Statement</h3>
+        <p>This allows for checking multiple conditions in sequence. The first true condition's block is executed. If none are true, the <code>ELSE</code> block (if present) is executed.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>IF grade == "A" THEN</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Excellent!"</code></p>
+        <p><code>ELSE IF grade == "B" THEN</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Good job!"</code></p>
+        <p><code>ELSE IF grade == "C" THEN</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Fair."</code></p>
+        <p><code>ELSE</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Keep trying!"</code></p>
+        <p><code>END IF</code></p>
+
+        <h2>Loops</h2>
+        <p>Loops are used to repeat a block of code multiple times. This is useful for tasks like processing all items in a list or performing an action until a condition changes.</p>
+
+        <h3>For Loops</h3>
+        <p>For loops are typically used when you know in advance how many times you want to repeat the code, or when you want to iterate over each item in a sequence (like a list or array).</p>
+        <p><strong>Example (Iterating a specific number of times - Pseudocode):</strong></p>
+        <p><code>FOR i FROM 1 TO 5 DO</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Iteration number: " + i</code></p>
+        <p><code>END FOR</code></p>
+        <br>
+        <p><strong>Example (Iterating over a list - Pseudocode/Python-like):</strong></p>
+        <p><code>fruits = ["apple", "banana", "cherry"]</code></p>
+        <p><code>FOR EACH fruit IN fruits DO</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "I like " + fruit</code></p>
+        <p><code>END FOR</code></p>
+
+        <h3>While Loops</h3>
+        <p>While loops repeat a block of code as long as a specified condition remains true. The condition is checked before each iteration. If the condition is initially false, the loop may not execute at all.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>count = 0</code></p>
+        <p><code>WHILE count < 3 DO</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Count is: " + count</code></p>
+        <p><code>&nbsp;&nbsp;SET count = count + 1</code></p>
+        <p><code>END WHILE</code></p>
+        <p>It's important to ensure that the condition in a while loop will eventually become false; otherwise, it will result in an infinite loop!</p>
+
+        <h2>Nested Control Structures</h2>
+        <p>Control structures can be nested, meaning you can place one control structure inside another. For example, you might have an <code>IF</code> statement inside a <code>FOR</code> loop, or a <code>FOR</code> loop inside another <code>FOR</code> loop.</p>
+        <p><strong>Conceptual Example (Iterating through a 2D grid):</strong></p>
+        <p>Imagine you have a grid of squares, like a chessboard (e.g., <code>rows = 8</code>, <code>cols = 8</code>).</p>
+        <p><code>FOR r FROM 1 TO rows DO</code></p>
+        <p><code>&nbsp;&nbsp;FOR c FROM 1 TO cols DO</code></p>
+        <p><code>&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Processing square at row " + r + ", col " + c</code></p>
+        <p><code>&nbsp;&nbsp;END FOR</code></p>
+        <p><code>END FOR</code></p>
+        <p>In this case, the outer loop iterates through each row, and for each row, the inner loop iterates through each column. Nesting allows for more complex logic and handling of multi-dimensional data or scenarios.</p>
+        <p>Another example could be checking a condition for each item in a list:</p>
+        <p><code>numbers = [10, 25, -5, 40]</code></p>
+        <p><code>FOR EACH num IN numbers DO</code></p>
+        <p><code>&nbsp;&nbsp;IF num > 0 THEN</code></p>
+        <p><code>&nbsp;&nbsp;&nbsp;&nbsp;PRINT num + " is positive."</code></p>
+        <p><code>&nbsp;&nbsp;ELSE IF num < 0 THEN</code></p>
+        <p><code>&nbsp;&nbsp;&nbsp;&nbsp;PRINT num + " is negative."</code></p>
+        <p><code>&nbsp;&nbsp;ELSE</code></p>
+        <p><code>&nbsp;&nbsp;&nbsp;&nbsp;PRINT num + " is zero."</code></p>
+        <p><code>&nbsp;&nbsp;END IF</code></p>
+        <p><code>END FOR</code></p>
+    </div>
+</body>
+</html>

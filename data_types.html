@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types - Programming Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Types</h1>
+        <p><a href="index.html">Back to Home</a></p>
+
+        <h2>What are Data Types?</h2>
+        <p>A <strong>data type</strong> is a classification that specifies which type of value a variable can hold and what type of mathematical, relational, or logical operations can be applied to it without causing an error. It tells the computer how to interpret the value stored in a variable. For instance, the computer treats a number differently from a piece of text. Data types are fundamental for managing data effectively and preventing errors in programs.</p>
+
+        <h2>Common Data Types</h2>
+
+        <h3>Integers</h3>
+        <p>Integers are whole numbers, meaning they do not have a decimal point. They can be positive, negative, or zero.</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>count = 10</code></p>
+        <p><code>temperature = -5</code></p>
+        <p><code>year = 2023</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Arithmetic: Addition (<code>+</code>), Subtraction (<code>-</code>), Multiplication (<code>*</code>), Division (<code>/</code>, often integer division), Modulus (<code>%</code>).</li>
+        </ul>
+
+        <h3>Floating-Point Numbers (Floats)</h3>
+        <p>Floating-point numbers, or floats, are numbers that have a decimal point or are written in exponential notation. They are used to represent real numbers.</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>price = 19.99</code></p>
+        <p><code>pi_approx = 3.14159</code></p>
+        <p><code>scientific_notation = 6.022e23</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Arithmetic: Addition (<code>+</code>), Subtraction (<code>-</code>), Multiplication (<code>*</code>), Division (<code>/</code>).</li>
+        </ul>
+
+        <h3>Strings</h3>
+        <p>Strings are sequences of characters, used to represent text. They are usually enclosed in quotation marks (either single <code>'</code> or double <code>"</code>, depending on the language).</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>greeting = "Hello, world!"</code></p>
+        <p><code>userName = 'Alice123'</code></p>
+        <p><code>empty_string = ""</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Concatenation (joining strings, e.g., <code>firstName + " " + lastName</code>)</li>
+            <li>Finding length (number of characters)</li>
+            <li>Accessing characters by index (e.g., <code>greeting[0]</code> to get 'H')</li>
+            <li>Creating substrings (extracting a part of the string)</li>
+            <li>Searching for characters or substrings</li>
+        </ul>
+
+        <h3>Booleans</h3>
+        <p>Booleans represent truth values. A boolean variable can only hold one of two values: <code>true</code> or <code>false</code> (or their equivalents like <code>True</code>/<code>False</code> in Python, or <code>1</code>/<code>0</code> in some contexts).</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>isLoggedIn = true</code></p>
+        <p><code>hasPermission = false</code></p>
+        <p><code>isValid = (5 > 3) // This expression evaluates to true</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Logical AND (<code>&&</code> or <code>and</code>)</li>
+            <li>Logical OR (<code>||</code> or <code>or</code>)</li>
+            <li>Logical NOT (<code>!</code> or <code>not</code>)</li>
+        </ul>
+
+        <h3>Lists/Arrays (briefly)</h3>
+        <p>Lists (often called arrays in many languages) are ordered collections of items. The items can be of different data types, though it's common for them to be of the same type. Items are accessed by their position (index), which usually starts at 0.</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>numbers = [1, 2, 3, 4, 5]</code></p>
+        <p><code>fruits = ["apple", "banana", "cherry"]</code></p>
+        <p><code>mixed_list = [10, "hello", true]</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Accessing elements by index (e.g., <code>fruits[0]</code> for "apple")</li>
+            <li>Adding items</li>
+            <li>Removing items</li>
+            <li>Finding the length (number of items)</li>
+            <li>Sorting</li>
+        </ul>
+
+        <h3>Objects/Dictionaries/Maps (briefly)</h3>
+        <p>Objects (also known as dictionaries in Python, or maps in other languages) are collections of key-value pairs. Each key is unique within the collection and is used to look up its corresponding value. This is a very flexible way to structure more complex data.</p>
+        <p><strong>Examples:</strong></p>
+        <p><code>// JavaScript-like object</code></p>
+        <p><code>student = { name: "David", age: 22, major: "Computer Science" }</code></p>
+        <p><code>// Python-like dictionary</code></p>
+        <p><code>capitals = { "USA": "Washington D.C.", "UK": "London", "Japan": "Tokyo" }</code></p>
+        <p><strong>Typical Operations:</strong></p>
+        <ul>
+            <li>Accessing values by key (e.g., <code>student.name</code> or <code>capitals["UK"]</code>)</li>
+            <li>Adding new key-value pairs</li>
+            <li>Removing key-value pairs</li>
+            <li>Checking if a key exists</li>
+            <li>Getting a list of all keys or all values</li>
+        </ul>
+        <p>Understanding data types is crucial for writing effective and error-free code. The specific data types and their exact behaviors can vary slightly between different programming languages, but the core concepts are largely the same.</p>
+    </div>
+</body>
+</html>

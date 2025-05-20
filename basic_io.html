@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input/Output - Programming Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Input/Output</h1>
+        <p><a href="index.html">Back to Home</a></p>
+
+        <h2>What is Input/Output?</h2>
+        <p>Input/Output, often abbreviated as I/O, refers to how a computer program communicates with the "outside world." This includes everything from how it receives data (input) to how it presents data or results (output). Effective I/O is crucial for any interactive program, as it allows users to provide information to the program and receive feedback or results from it. It also enables programs to interact with other systems, like files or networks.</p>
+
+        <h2>Input</h2>
+        <p>Input is the process of getting data into your program. This data can come from various sources and is essential for the program to perform its tasks, especially if those tasks depend on external information or user interaction.</p>
+
+        <h3>Common Sources of Input</h3>
+        <h4>User Input (Command Line/Console)</h4>
+        <p>This is a common way for programs to get simple text-based input from a user. The program typically displays a prompt on the command line (or console window), and the user types their response. The program then reads this input for further processing.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>PRINT "What is your name?"</code></p>
+        <p><code>userName = INPUT()  // Program waits for user to type and press Enter</code></p>
+        <p><code>PRINT "Hello, " + userName</code></p>
+
+        <h4>User Input (Graphical User Interface - GUI)</h4>
+        <p>In applications with a GUI (like desktop applications or web pages), users provide input by interacting with visual elements. This can include:</p>
+        <ul>
+            <li>Typing text into input fields or text boxes (e.g., filling out a registration form on a website).</li>
+            <li>Clicking buttons to trigger actions.</li>
+            <li>Selecting options from dropdown menus or radio buttons.</li>
+            <li>Dragging and dropping elements.</li>
+        </ul>
+        <p>The program then captures these interactions as input events or data.</p>
+
+        <h4>File Input</h4>
+        <p>Programs often need to read data that has been stored in files. This could be configuration settings, user data, large datasets, or any information that needs to be persistent. The program opens the file, reads its contents (either all at once or line by line), and then processes the data. For example, a word processor opens a <code>.docx</code> file to load a document.</p>
+
+        <h2>Output</h2>
+        <p>Output is the process of presenting data from your program to the outside world. This could be displaying results to a user, saving information for later use, or sending data to another system.</p>
+
+        <h3>Common Forms of Output</h3>
+        <h4>Displaying to Console/Screen</h4>
+        <p>This is one of the simplest ways to provide output, especially in command-line programs or for debugging purposes. The program sends text-based information (like results of calculations, status messages, or errors) to be displayed directly on the user's screen or console window.</p>
+        <p><strong>Example (Pseudocode):</strong></p>
+        <p><code>result = 10 + 5</code></p>
+        <p><code>PRINT "The result is: " + result  // Displays "The result is: 15"</code></p>
+
+        <h4>Writing to a Web Page</h4>
+        <p>Web applications generate output by dynamically creating or modifying the content of web pages. When you visit a website, the server-side code (or client-side JavaScript) processes your request and generates HTML, CSS, and JavaScript that your browser then renders as the web page you see. The content on this very page is an example of output being written to a web page.</p>
+
+        <h4>File Output</h4>
+        <p>Just as programs can read from files, they can also write data to files. This is useful for:</p>
+        <ul>
+            <li>Saving user work (e.g., a text editor saving a document).</li>
+            <li>Logging program activity or errors.</li>
+            <li>Exporting data in a specific format (e.g., generating a CSV file or a PDF report).</li>
+        </ul>
+        <p>The program creates or opens a file and then writes the desired information into it.</p>
+        <p>Effective I/O design is key to creating user-friendly and functional software.</p>
+    </div>
+</body>
+</html>

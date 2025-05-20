@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - Programming Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Variables</h1>
+        <p><a href="index.html">Back to Home</a></p>
+
+        <h2>What are Variables?</h2>
+        <p>In programming, a <strong>variable</strong> is a symbolic name or identifier that refers to a storage location in the computer's memory. You can think of a variable as a labeled box where you can store and retrieve data that your program needs to work with. The data stored in a variable can be changed during the execution of a program, which is why they are called "variables."</p>
+        <p>Variables are fundamental because they allow us to write flexible programs. Instead of writing a program that only works with fixed values, we can use variables to represent data that might change each time the program runs or as the program is running.</p>
+
+        <h2>Declaring Variables</h2>
+        <p>Declaring a variable is the process of creating it. When you declare a variable, you typically give it a name and specify the type of data it will hold (though this varies by programming language).</p>
+        <p>In some languages, like Java or C++, you must explicitly declare the data type of the variable (e.g., <code>int</code> for integer, <code>String</code> for text). This is called <strong>static typing</strong>.</p>
+        <p>Example (Java-like):</p>
+        <p><code>int userAge;</code></p>
+        <p><code>String userName;</code></p>
+        <p>In other languages, like Python or JavaScript, the data type is often inferred from the value assigned to the variable. This is called <strong>dynamic typing</strong>.</p>
+        <p>Example (Python-like):</p>
+        <p><code>userAge = 30  // userAge is inferred to be an integer</code></p>
+        <p><code>userName = "Bob" // userName is inferred to be a string</code></p>
+
+        <h2>Assigning Values</h2>
+        <p>Assigning a value to a variable means storing a piece of data in the memory location that the variable refers to. This is typically done using an assignment operator, which is often the equals sign (<code>=</code>).</p>
+        <p>Example:</p>
+        <p><code>// Declaration (in a dynamically typed language) and assignment</code></p>
+        <p><code>score = 100;</code></p>
+        <p><code>// Assignment to an already declared variable</code></p>
+        <p><code>score = score + 10; // The variable 'score' now holds 110</code></p>
+        <p>The value on the right side of the <code>=</code> is evaluated, and the result is stored in the variable on the left side.</p>
+
+        <h2>Naming Conventions</h2>
+        <p>Choosing good names for variables makes your code much easier to read and understand. Here are some common best practices:</p>
+        <ul>
+            <li><strong>Be Descriptive:</strong> Names should indicate the purpose or content of the variable (e.g., <code>customerName</code> is better than <code>cn</code>).</li>
+            <li><strong>Case Sensitivity:</strong> Most programming languages are case-sensitive, meaning <code>myVariable</code> and <code>myvariable</code> are different.</li>
+            <li><strong>Start with a Letter or Underscore:</strong> Variable names typically cannot start with a number.</li>
+            <li><strong>No Spaces:</strong> Variable names cannot contain spaces.</li>
+            <li><strong>Common Styles:</strong>
+                <ul>
+                    <li><code>camelCase</code>: Start with a lowercase letter, and capitalize the first letter of each subsequent word (e.g., <code>numberOfStudents</code>). Common in JavaScript, Java.</li>
+                    <li><code>snake_case</code>: Use all lowercase letters, with words separated by underscores (e.g., <code>number_of_students</code>). Common in Python, Ruby.</li>
+                    <li><code>PascalCase</code> (or UpperCamelCase): Capitalize the first letter of every word (e.g., <code>NumberOfStudents</code>). Often used for class names.</li>
+                </ul>
+            </li>
+            <li><strong>Avoid Reserved Keywords:</strong> Do not use names that are keywords in the programming language (e.g., <code>if</code>, <code>for</code>, <code>while</code>).</li>
+        </ul>
+
+        <h2>Variable Scope (Basic Introduction)</h2>
+        <p><strong>Scope</strong> refers to the region of your program where a variable can be accessed. Not all variables are accessible from all parts of your program.</p>
+        <ul>
+            <li><strong>Local Variables:</strong> These are declared within a specific block of code, like a function. They can only be used within that block. Once the block finishes executing, the local variables usually cease to exist.</li>
+            <li><strong>Global Variables:</strong> These are declared outside of any specific block (e.g., outside all functions). They can often be accessed from anywhere in the program. However, overuse of global variables can make programs harder to manage and debug.</li>
+        </ul>
+        <p>Understanding scope helps prevent naming conflicts and manages memory effectively.</p>
+
+        <h2>Examples (Pseudocode/Python-like)</h2>
+        <h3>Declaration and Assignment:</h3>
+        <p>In some languages, you might see explicit declaration and assignment like this (pseudocode):</p>
+        <p><code>DECLARE age AS INTEGER</code></p>
+        <p><code>SET age = 30</code></p>
+        <p>More commonly in languages like Python, it's simpler:</p>
+        <p><code>age = 30</code></p>
+        <p><code>userName = "Alice"</code></p>
+        <p><code>temperature = 25.5</code></p>
+        <p><code>isActive = true  // or True in Python</code></p>
+
+        <h3>Using Variables:</h3>
+        <p>Once variables have values, you can use them in expressions and statements:</p>
+        <p><code>PRINT "User's name is: " + userName</code></p>
+        <p><code>newAge = age + 1</code></p>
+        <p><code>PRINT "Next year, user will be: " + newAge</code></p>
+        <p><code>IF isActive THEN PRINT userName + " is currently active."</code></p>
+    </div>
+</body>
+</html>

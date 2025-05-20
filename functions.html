@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions - Programming Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Functions</h1>
+        <p><a href="index.html">Back to Home</a></p>
+
+        <h2>What are Functions?</h2>
+        <p>A <strong>function</strong> is a self-contained, reusable block of code designed to perform a specific task. Think of it as a mini-program within your main program. Functions are a cornerstone of structured programming and offer several key benefits:</p>
+        <ul>
+            <li><strong>Organization:</strong> Functions help break down complex problems into smaller, manageable pieces, making your code easier to understand and maintain.</li>
+            <li><strong>Reusability (DRY - Don't Repeat Yourself):</strong> Once a function is defined, it can be called multiple times from different parts of your program, avoiding redundant code. If you need to change how the task is done, you only need to update the function in one place.</li>
+            <li><strong>Abstraction:</strong> Functions hide the details of how a task is performed (the implementation) and only expose what is necessary to use them (the interface). This means you can use a function without needing to know its internal workings.</li>
+        </ul>
+
+        <h2>Defining a Function</h2>
+        <p>Defining a function involves giving it a name, specifying any inputs it needs (parameters), and then writing the block of code that performs its task.</p>
+        <p><strong>Syntax and Example (Pseudocode/Python-like):</strong></p>
+        <p><code>FUNCTION greet(name)</code></p>
+        <p><code>&nbsp;&nbsp;PRINT "Hello, " + name + "!"</code></p>
+        <p><code>END FUNCTION</code></p>
+        <p>In this example, <code>FUNCTION</code> is a keyword indicating a function definition, <code>greet</code> is the name of the function, and <code>name</code> is a parameter it accepts.</p>
+
+        <h2>Calling a Function</h2>
+        <p>Calling a function (also known as invoking or executing it) means running the code inside that function. You call a function by using its name followed by parentheses, providing any required values (arguments) inside the parentheses.</p>
+        <p><strong>Example (using the <code>greet</code> function defined above):</strong></p>
+        <p><code>greet("Alice")  // Output: Hello, Alice!</code></p>
+        <p><code>greet("Bob")    // Output: Hello, Bob!</code></p>
+        <p>Each time <code>greet()</code> is called, the code inside it runs with the specific argument provided.</p>
+
+        <h2>Parameters and Arguments</h2>
+        <p>These terms are often used interchangeably but have distinct meanings:</p>
+        <ul>
+            <li><strong>Parameters:</strong> These are the variables listed inside the parentheses in the function definition. They act as placeholders for the values that will be passed to the function when it is called. In <code>FUNCTION greet(name)</code>, <code>name</code> is a parameter.</li>
+            <li><strong>Arguments:</strong> These are the actual values that are passed to the function when it is called. In <code>greet("Alice")</code>, <code>"Alice"</code> is the argument.</li>
+        </ul>
+        <p>When a function is called, the arguments are assigned to their corresponding parameters within the function's scope.</p>
+
+        <h2>Return Values</h2>
+        <p>Many functions perform a calculation or operation and then send a result back to the part of the code that called them. This is called a <strong>return value</strong>. The <code>RETURN</code> statement (or similar keyword) is used to send a value back.</p>
+        <p><strong>Syntax and Example (Pseudocode/Python-like):</strong></p>
+        <p><code>FUNCTION add(a, b)</code></p>
+        <p><code>&nbsp;&nbsp;result = a + b</code></p>
+        <p><code>&nbsp;&nbsp;RETURN result</code></p>
+        <p><code>END FUNCTION</code></p>
+        <br>
+        <p><code>sum_result = add(5, 3)  // The value returned by add(5, 3), which is 8, is stored in sum_result</code></p>
+        <p><code>PRINT sum_result        // Output: 8</code></p>
+        <p>A function can return various types of data, such as numbers, strings, booleans, or even more complex data structures. If a function does not explicitly return a value, it might return a default value (like <code>null</code> or <code>undefined</code>) or simply perform actions without sending back a result (sometimes called a "procedure").</p>
+
+        <h3>Common Function Examples/Types</h3>
+        <p>Functions are used for a vast array of tasks. Here are a few common categories:</p>
+
+        <h4>String Manipulation Functions</h4>
+        <p>These functions operate on text data. Common tasks include:</p>
+        <ul>
+            <li>Finding the length of a string.</li>
+            <li>Converting a string to uppercase or lowercase.</li>
+            <li>Finding if a substring exists within a string.</li>
+            <li>Extracting a portion of a string (substring).</li>
+            <li>Replacing parts of a string.</li>
+        </ul>
+        <p><strong>Example (Pseudocode/Python-like):</strong></p>
+        <p><code>userName = "Charlie"</code></p>
+        <p><code>length_of_name = LENGTH(userName)  // length_of_name would be 7</code></p>
+        <p><code>upper_name = TO_UPPERCASE(userName) // upper_name would be "CHARLIE"</code></p>
+        <p><code>PRINT length_of_name</code></p>
+
+        <h4>Mathematical Functions</h4>
+        <p>These functions perform mathematical calculations. Common tasks include:</p>
+        <ul>
+            <li>Finding the minimum or maximum of a set of numbers.</li>
+            <li>Calculating the absolute value of a number.</li>
+            <li>Computing square roots, powers, or trigonometric functions (sine, cosine, etc.).</li>
+            <li>Rounding numbers.</li>
+        </ul>
+        <p><strong>Example (Pseudocode/Python-like):</strong></p>
+        <p><code>value = -10.5</code></p>
+        <p><code>absolute_value = ABS(value) // absolute_value would be 10.5</code></p>
+        <p><code>squared_value = POWER(5, 2) // squared_value would be 25 (5 to the power of 2)</code></p>
+        <p><code>PRINT absolute_value</code></p>
+
+        <h4>Sorting Functions</h4>
+        <p>Sorting involves arranging a collection of items (like numbers in a list or names in an address book) into a specific order (e.g., ascending or descending).</p>
+        <p>Many programming languages provide built-in sorting functions, but understanding how sorting algorithms work is a key concept in computer science.</p>
+        <p><strong>Conceptual Example: Bubble Sort</strong></p>
+        <p>Bubble Sort is a simple comparison-based sorting algorithm. It works by repeatedly stepping through the list to be sorted, comparing each pair of adjacent items and swapping them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</p>
+        <p>While not the most efficient for large lists, its simplicity makes it a good example for understanding sorting concepts.</p>
+        <p><code>Initial list: [5, 1, 4, 2, 8]</code></p>
+        <p><strong>Bubble Sort Conceptual Steps:</strong></p>
+        <ul>
+            <li><strong>Pass 1:</strong>
+                <ul>
+                    <li>Compare 5 and 1. Swap. List: [1, 5, 4, 2, 8]</li>
+                    <li>Compare 5 and 4. Swap. List: [1, 4, 5, 2, 8]</li>
+                    <li>Compare 5 and 2. Swap. List: [1, 4, 2, 5, 8]</li>
+                    <li>Compare 5 and 8. No swap. List: [1, 4, 2, 5, 8] (Largest element '8' is now at the end)</li>
+                </ul>
+            </li>
+            <li><strong>Pass 2:</strong>
+                <ul>
+                    <li>Compare 1 and 4. No swap.</li>
+                    <li>Compare 4 and 2. Swap. List: [1, 2, 4, 5, 8]</li>
+                    <li>Compare 4 and 5. No swap. (Second largest '5' is in place)</li>
+                </ul>
+            </li>
+            <li><strong>Pass 3:</strong>
+                <ul>
+                    <li>Compare 1 and 2. No swap.</li>
+                    <li>Compare 2 and 4. No swap. (List is now sorted, but algorithm might do one more pass to confirm)</li>
+                </ul>
+            </li>
+            <li>(Further passes will find no swaps needed, confirming the list is sorted)</li>
+        </ul>
+        <p><code>Sorted list: [1, 2, 4, 5, 8]</code></p>
+        <p>Functions are powerful tools that make programming more efficient, modular, and understandable.</p>
+    </div>
+</body>
+</html>
