@@ -56,3 +56,36 @@ pre code {
   border-radius: 0; /* Reset border radius */
   /* font-family is already inherited from pre, so no need to set it again */
 }
+
+/* Sorting Visualizer Specific Styles */
+#barContainer {
+    display: flex; /* Align bars horizontally */
+    align-items: flex-end; /* Align bars to the bottom of the container */
+    min-height: 250px; /* Default height, can be adjusted */
+    /* border: 1px solid #ccc; (border is already inline, but this could be moved here) */
+    background-color: #f9f9f9; /* Light background for the container */
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.bar {
+    flex-grow: 1; /* Allow bars to share space equally */
+    background-color: steelblue; /* Default bar color */
+    margin-right: 2px; /* Space between bars */
+    /* Height will be set by JavaScript */
+    width: 10px; /* Default width, but flex-grow will make it responsive */
+    transition: height 0.2s ease-out, background-color 0.2s ease-out; /* Smooth transitions for height/color changes */
+}
+
+/* Style for the controls section for better layout */
+#controls {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+#controls p, #controls button {
+    margin-right: 10px;
+    display: inline-block; /* Align controls nicely */
+}
